@@ -5,8 +5,8 @@ Run the toolchain on real data with **zero API keys**. No accounts, no setup, ju
 ## 1. Clone and install
 
 ```bash
-git clone https://github.com/RoberickSanders/the-vector
-cd the-vector/job-search-tool
+git clone https://github.com/RoberickSanders/job-search-stack
+cd job-search-stack/job-search-tool
 python -m venv .venv
 .venv/bin/pip install -r requirements.txt
 ```

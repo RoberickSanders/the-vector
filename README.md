@@ -7,8 +7,8 @@ An agentic toolchain for job seekers. Find the right hiring manager, tailor your
 The fastest way to see the toolchain work:
 
 ```bash
-git clone https://github.com/RoberickSanders/the-vector
-cd the-vector/job-search-tool
+git clone https://github.com/RoberickSanders/job-search-stack
+cd job-search-stack/job-search-tool
 python -m venv .venv && .venv/bin/pip install -r requirements.txt
 
 # Pull real jobs (JobSpy is auth-free)
@@ -36,8 +36,8 @@ Full quickstart at [`examples/QUICKSTART.md`](examples/QUICKSTART.md). Architect
 ## Quick start
 
 ```bash
-git clone https://github.com/RoberickSanders/the-vector
-cd the-vector/job-search-tool
+git clone https://github.com/RoberickSanders/job-search-stack
+cd job-search-stack/job-search-tool
 python -m venv .venv
 .venv/bin/pip install -r requirements.txt
 

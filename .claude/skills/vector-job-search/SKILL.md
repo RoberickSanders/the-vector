@@ -3,7 +3,7 @@ name: vector-job-search
 version: "0.1.0"
 description: "The Vector — agentic GTM job-search tool. Find hiring managers via 5-step cascade (Blitz/Hunter/Icypeas/permutator+MV), tailor resumes per JD with proof-point safety, score against ATS, batch-apply at scale. Triggers: 'tailor my resume', 'find the hiring manager', 'score this JD', 'batch apply', 'job search'."
 allowed-tools: Bash, Read, Write, Edit
-homepage: https://github.com/RoberickSanders/the-vector
+homepage: https://github.com/RoberickSanders/job-search-stack
 user-invocable: true
 ---
 

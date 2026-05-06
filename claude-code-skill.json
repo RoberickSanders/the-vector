@@ -3,7 +3,7 @@
   "name": "vector-job-search",
   "version": "0.1.0",
   "description": "The Vector — agentic GTM job-search tool. Find hiring managers, tailor resumes per JD with proof-point safety, score against ATS, batch-apply at scale.",
-  "homepage": "https://github.com/RoberickSanders/the-vector",
+  "homepage": "https://github.com/RoberickSanders/job-search-stack",
   "license": "MIT",
   "user_invocable": true,
   "argument_hint": "tailor my resume for <company>, find hiring manager for <jd-url>, batch apply top 5",
