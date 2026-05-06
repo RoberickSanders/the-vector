@@ -1,0 +1,601 @@
+{
+  "_comment": "d100 Tier 1 + key Tier 2 companies with ATS classification. Slugs verified against live API endpoints on 2026-04-25. Workday/custom companies are catalogued so we know to add them later.",
+  "_last_updated": "2026-04-25",
+  "_source": "manually curated d100 target list",
+  "companies": [
+    {
+      "name": "GitLab",
+      "ats": "greenhouse",
+      "ats_slug": "gitlab",
+      "tier": 1,
+      "track": "A+B",
+      "notes": "All-remote; verified ~200 jobs via Greenhouse",
+      "domain": "gitlab.com"
+    },
+    {
+      "name": "Vanta",
+      "ats": "ashby",
+      "ats_slug": "vanta",
+      "tier": 1,
+      "track": "A+B",
+      "notes": "Remote-first; verified ~159 jobs via Ashby",
+      "domain": "vanta.com"
+    },
+    {
+      "name": "1Password",
+      "ats": "ashby",
+      "ats_slug": "1password",
+      "tier": 1,
+      "track": "A+B",
+      "notes": "Verified ~82 jobs via Ashby",
+      "domain": "1password.com"
+    },
+    {
+      "name": "Supabase",
+      "ats": "ashby",
+      "ats_slug": "supabase",
+      "tier": 1,
+      "track": "A+B",
+      "notes": "All-remote; verified ~42 jobs via Ashby",
+      "domain": "supabase.com"
+    },
+    {
+      "name": "Tailscale",
+      "ats": "greenhouse",
+      "ats_slug": "tailscale",
+      "tier": 1,
+      "track": "A+B",
+      "notes": "Verified ~49 jobs via Greenhouse",
+      "domain": "tailscale.com"
+    },
+    {
+      "name": "HashiCorp",
+      "ats": "workday-blocked",
+      "ats_slug": null,
+      "tier": 1,
+      "track": "A",
+      "notes": "Workday via IBM post-acquisition; tenant slug not discoverable on probe pass \u2014 investigate",
+      "domain": "hashicorp.com"
+    },
+    {
+      "name": "Zapier",
+      "ats": "ashby",
+      "ats_slug": "zapier",
+      "tier": 1,
+      "track": "A+B",
+      "notes": "Verified ~23 jobs via Ashby",
+      "domain": "zapier.com"
+    },
+    {
+      "name": "Automattic",
+      "ats": "custom",
+      "ats_slug": null,
+      "tier": 1,
+      "track": "A+B",
+      "notes": "Uses automattic.com/work-with-us custom site \u2014 skipped in V2 scrapers",
+      "domain": "automattic.com"
+    },
+    {
+      "name": "Atlassian",
+      "ats": "workday-blocked",
+      "ats_slug": null,
+      "tier": 1,
+      "track": "A",
+      "notes": "Workday tenant blocked on probe pass (422 across all tried sites); likely uses Atlassian-internal SR \u2014 revisit later",
+      "domain": "atlassian.com"
+    },
+    {
+      "name": "PostHog",
+      "ats": "ashby",
+      "ats_slug": "posthog",
+      "tier": 1,
+      "track": "A+B",
+      "notes": "Verified ~15 jobs via Ashby; async-first culture",
+      "domain": "posthog.com"
+    },
+    {
+      "name": "Vercel",
+      "ats": "ashby",
+      "ats_slug": "vercel",
+      "tier": 1,
+      "track": "A+B",
+      "notes": "Verified Ashby (count varies; sometimes 0 listed)",
+      "domain": "vercel.com"
+    },
+    {
+      "name": "CrowdStrike",
+      "ats": "workday",
+      "ats_slug": "crowdstrike/wd5/CrowdStrikeCareers",
+      "tier": 1,
+      "track": "A",
+      "notes": "Verified ~597 jobs via Workday (slug=crowdstrike/wd5/CrowdStrikeCareers; capped at 400 per WORKDAY_PAGE_LIMIT)",
+      "domain": "crowdstrike.com"
+    },
+    {
+      "name": "Cloudflare",
+      "ats": "greenhouse",
+      "ats_slug": "cloudflare",
+      "tier": 1,
+      "track": "A+B",
+      "notes": "Verified ~458 jobs via Greenhouse",
+      "domain": "cloudflare.com"
+    },
+    {
+      "name": "SentinelOne",
+      "ats": "unknown",
+      "ats_slug": null,
+      "tier": 1,
+      "track": "A",
+      "notes": "Could not classify on probe pass \u2014 likely custom/iCIMS; investigate later",
+      "domain": "sentinelone.com"
+    },
+    {
+      "name": "Snyk",
+      "ats": "ashby",
+      "ats_slug": "snyk",
+      "tier": 1,
+      "track": "A",
+      "notes": "Confirmed Ashby endpoint; counts vary",
+      "domain": "snyk.io"
+    },
+    {
+      "name": "HubSpot",
+      "ats": "greenhouse",
+      "ats_slug": "hubspot",
+      "tier": 1,
+      "track": "A",
+      "notes": "Greenhouse responds; HubSpot also uses their own careers UI",
+      "domain": "hubspot.com"
+    },
+    {
+      "name": "Smartlead",
+      "ats": "unknown",
+      "ats_slug": null,
+      "tier": 1,
+      "track": "B",
+      "notes": "Smaller co; careers page is custom Notion/site \u2014 investigate later",
+      "domain": "smartlead.ai"
+    },
+    {
+      "name": "Apollo.io",
+      "ats": "greenhouse",
+      "ats_slug": "apolloio",
+      "tier": 1,
+      "track": "A+B",
+      "notes": "Verified ~44 jobs via Greenhouse (slug=apolloio)",
+      "domain": "apollo.io"
+    },
+    {
+      "name": "Calendly",
+      "ats": "greenhouse",
+      "ats_slug": "calendly",
+      "tier": 1,
+      "track": "A+B",
+      "notes": "Verified ~20 jobs via Greenhouse",
+      "domain": "calendly.com"
+    },
+    {
+      "name": "Retool",
+      "ats": "ashby",
+      "ats_slug": "retool",
+      "tier": 1,
+      "track": "A+B",
+      "notes": "Probe inconclusive; Retool uses Ashby for careers pages \u2014 verify slug if scraper returns 0",
+      "domain": "retool.com"
+    },
+    {
+      "name": "Glean",
+      "ats": "greenhouse",
+      "ats_slug": "gleanwork",
+      "tier": 1,
+      "track": "A+B",
+      "notes": "Verified ~177 jobs via Greenhouse (slug=gleanwork)",
+      "domain": "glean.com"
+    },
+    {
+      "name": "Twilio",
+      "ats": "greenhouse",
+      "ats_slug": "twilio",
+      "tier": 1,
+      "track": "A",
+      "notes": "Verified ~145 jobs via Greenhouse",
+      "domain": "twilio.com"
+    },
+    {
+      "name": "Klaviyo",
+      "ats": "greenhouse",
+      "ats_slug": "klaviyo",
+      "tier": 1,
+      "track": "A",
+      "notes": "Verified ~255 jobs via Greenhouse",
+      "domain": "klaviyo.com"
+    },
+    {
+      "name": "ServiceTitan",
+      "ats": "workday",
+      "ats_slug": "servicetitan/wd1/ServiceTitan",
+      "tier": 1,
+      "track": "A",
+      "notes": "Verified ~103 jobs via Workday (slug=servicetitan/wd1/ServiceTitan)",
+      "domain": "servicetitan.com"
+    },
+    {
+      "name": "Procore",
+      "ats": "workday-blocked",
+      "ats_slug": null,
+      "tier": 1,
+      "track": "A",
+      "notes": "Probe found careers.procore.com is custom (not Workday-public); ATS endpoint not discoverable \u2014 revisit",
+      "domain": "procore.com"
+    },
+    {
+      "name": "Weights & Biases",
+      "ats": "unknown",
+      "ats_slug": null,
+      "tier": 1,
+      "track": "A+B",
+      "notes": "Custom careers; couldn't classify on probe pass \u2014 investigate later",
+      "domain": "wandb.ai"
+    },
+    {
+      "name": "Hex",
+      "ats": "greenhouse",
+      "ats_slug": "hextechnologies",
+      "tier": 1,
+      "track": "A+B",
+      "notes": "Verified ~33 jobs via Greenhouse (slug=hextechnologies)",
+      "domain": "hex.tech"
+    },
+    {
+      "name": "Drata",
+      "ats": "ashby",
+      "ats_slug": "drata",
+      "tier": 1,
+      "track": "A",
+      "notes": "Verified ~25 jobs via Ashby",
+      "domain": "drata.com"
+    },
+    {
+      "name": "Plaid",
+      "ats": "ashby",
+      "ats_slug": "plaid",
+      "tier": 2,
+      "track": "A",
+      "notes": "Verified ~96 jobs via Ashby (also has Lever endpoint with similar count)",
+      "domain": "plaid.com"
+    },
+    {
+      "name": "MongoDB",
+      "ats": "greenhouse",
+      "ats_slug": "mongodb",
+      "tier": 2,
+      "track": "A",
+      "notes": "Verified ~433 jobs via Greenhouse",
+      "domain": "mongodb.com"
+    },
+    {
+      "name": "Sentry",
+      "ats": "ashby",
+      "ats_slug": "sentry",
+      "tier": 2,
+      "track": "A",
+      "notes": "Verified ~41 jobs via Ashby",
+      "domain": "sentry.io"
+    },
+    {
+      "name": "Gong",
+      "ats": "greenhouse",
+      "ats_slug": "gongio",
+      "tier": 2,
+      "track": "A",
+      "notes": "Verified ~102 jobs via Greenhouse (slug=gongio)",
+      "domain": "gong.io"
+    },
+    {
+      "name": "Outreach",
+      "ats": "lever",
+      "ats_slug": "outreach",
+      "tier": 2,
+      "track": "A+B",
+      "notes": "Verified ~29 jobs via Lever",
+      "domain": "outreach.io"
+    },
+    {
+      "name": "Salesloft",
+      "ats": "greenhouse",
+      "ats_slug": "salesloft",
+      "tier": 2,
+      "track": "A+B",
+      "notes": "Verified ~29 jobs via Greenhouse",
+      "domain": "salesloft.com"
+    },
+    {
+      "name": "Wiz",
+      "ats": "ashby",
+      "ats_slug": "wiz",
+      "tier": 2,
+      "track": "A",
+      "notes": "Confirmed Ashby endpoint; counts vary",
+      "domain": "wiz.io"
+    },
+    {
+      "name": "Webflow",
+      "ats": "greenhouse",
+      "ats_slug": "webflow",
+      "tier": 2,
+      "track": "A",
+      "notes": "Verified ~55 jobs via Greenhouse",
+      "domain": "webflow.com"
+    },
+    {
+      "name": "Notion",
+      "ats": "ashby",
+      "ats_slug": "notion",
+      "tier": 2,
+      "track": "A+B",
+      "notes": "Verified ~141 jobs via Ashby",
+      "domain": "notion.so"
+    },
+    {
+      "name": "Linear",
+      "ats": "ashby",
+      "ats_slug": "linear",
+      "tier": 2,
+      "track": "B",
+      "notes": "Verified ~22 jobs via Ashby",
+      "domain": "linear.app"
+    },
+    {
+      "name": "Replicate",
+      "ats": "unknown",
+      "ats_slug": null,
+      "tier": 2,
+      "track": "B",
+      "notes": "Custom careers; couldn't classify on probe pass",
+      "domain": "replicate.com"
+    },
+    {
+      "name": "Modal Labs",
+      "ats": "ashby",
+      "ats_slug": "modal",
+      "tier": 2,
+      "track": "B",
+      "notes": "Verified ~28 jobs via Ashby (slug=modal)",
+      "domain": "modal.com"
+    },
+    {
+      "name": "Pinecone",
+      "ats": "ashby",
+      "ats_slug": "pinecone",
+      "tier": 2,
+      "track": "A+B",
+      "notes": "Verified ~8 jobs via Ashby",
+      "domain": "pinecone.io"
+    },
+    {
+      "name": "LangChain",
+      "ats": "ashby",
+      "ats_slug": "langchain",
+      "tier": 2,
+      "track": "B",
+      "notes": "Verified ~90 jobs via Ashby",
+      "domain": "langchain.com"
+    },
+    {
+      "name": "Composio",
+      "ats": "ashby",
+      "ats_slug": "composio",
+      "tier": 2,
+      "track": "B",
+      "notes": "Verified ~12 jobs via Ashby",
+      "domain": "composio.dev"
+    },
+    {
+      "name": "Replit",
+      "ats": "ashby",
+      "ats_slug": "replit",
+      "tier": 2,
+      "track": "B",
+      "notes": "Verified ~84 jobs via Ashby",
+      "domain": "replit.com"
+    },
+    {
+      "name": "Faire",
+      "ats": "greenhouse",
+      "ats_slug": "faire",
+      "tier": 2,
+      "track": "A",
+      "notes": "Verified ~72 jobs via Greenhouse",
+      "domain": "faire.com"
+    },
+    {
+      "name": "Hightouch",
+      "ats": "ashby",
+      "ats_slug": "hightouch",
+      "tier": 2,
+      "track": "A+B",
+      "notes": "Verified Ashby endpoint; counts low",
+      "domain": "hightouch.com"
+    },
+    {
+      "name": "Workato",
+      "ats": "greenhouse",
+      "ats_slug": "workato",
+      "tier": 2,
+      "track": "A",
+      "notes": "Verified ~171 jobs via Greenhouse",
+      "domain": "workato.com"
+    },
+    {
+      "name": "n8n",
+      "ats": "ashby",
+      "ats_slug": "n8n",
+      "tier": 2,
+      "track": "B",
+      "notes": "Verified ~43 jobs via Ashby",
+      "domain": "n8n.io"
+    },
+    {
+      "name": "Buildkite",
+      "ats": "greenhouse",
+      "ats_slug": "buildkite",
+      "tier": 2,
+      "track": "A+B",
+      "notes": "Verified ~15 jobs via Greenhouse",
+      "domain": "buildkite.com"
+    },
+    {
+      "name": "Render",
+      "ats": "ashby",
+      "ats_slug": "render",
+      "tier": 2,
+      "track": "B",
+      "notes": "Verified ~20 jobs via Ashby",
+      "domain": "render.com"
+    },
+    {
+      "name": "Cohere",
+      "ats": "ashby",
+      "ats_slug": "cohere",
+      "tier": 2,
+      "track": "B",
+      "notes": "Verified ~114 jobs via Ashby (Tier 2 watch list)",
+      "domain": "cohere.com"
+    },
+    {
+      "name": "Lemlist",
+      "ats": "ashby",
+      "ats_slug": "lemlist",
+      "tier": 2,
+      "track": "B",
+      "notes": "Verified ~18 jobs via Ashby",
+      "domain": "lemlist.com"
+    },
+    {
+      "name": "Mistral",
+      "ats": "ashby",
+      "ats_slug": "mistral",
+      "tier": 2,
+      "track": "B",
+      "notes": "Verified Ashby endpoint; counts vary; EU-lean",
+      "domain": "mistral.ai"
+    },
+    {
+      "name": "Tanium",
+      "ats": "greenhouse",
+      "ats_slug": "tanium",
+      "tier": 2,
+      "track": "A",
+      "notes": "Verified ~84 jobs via Greenhouse; cyber + clearance bonus",
+      "domain": "tanium.com"
+    },
+    {
+      "name": "Airtable",
+      "ats": "greenhouse",
+      "ats_slug": "airtable",
+      "tier": 2,
+      "track": "A",
+      "notes": "Verified ~52 jobs via Greenhouse",
+      "domain": "airtable.com"
+    },
+    {
+      "name": "PlanetScale",
+      "ats": "greenhouse",
+      "ats_slug": "planetscale",
+      "tier": 2,
+      "track": "A+B",
+      "notes": "Verified ~7 jobs via Greenhouse (data infra adjacency)",
+      "domain": "planetscale.com"
+    },
+    {
+      "name": "Discord",
+      "ats": "greenhouse",
+      "ats_slug": "discord",
+      "tier": 2,
+      "track": "B",
+      "notes": "Verified ~83 jobs via Greenhouse (added as adjacent technical co)",
+      "domain": "discord.com"
+    },
+    {
+      "name": "Netlify",
+      "ats": "greenhouse",
+      "ats_slug": "netlify",
+      "tier": 2,
+      "track": "B",
+      "notes": "Verified Greenhouse endpoint (low counts; Vercel-adjacent)",
+      "domain": "netlify.com"
+    },
+    {
+      "name": "Sourcegraph",
+      "ats": "unknown",
+      "ats_slug": null,
+      "tier": 2,
+      "track": "A+B",
+      "notes": "Custom careers; couldn't classify on probe pass",
+      "domain": "sourcegraph.com"
+    },
+    {
+      "name": "GitHub",
+      "ats": "workday-blocked",
+      "ats_slug": null,
+      "tier": 2,
+      "track": "A",
+      "notes": "Microsoft Eightfold/Avature careers (github.careers); not standard Workday-public \u2014 revisit",
+      "domain": "github.com"
+    },
+    {
+      "name": "Hugging Face",
+      "ats": "unknown",
+      "ats_slug": null,
+      "tier": 2,
+      "track": "B",
+      "notes": "Couldn't classify on probe pass",
+      "domain": "huggingface.co"
+    },
+    {
+      "name": "Fly.io",
+      "ats": "unknown",
+      "ats_slug": null,
+      "tier": 2,
+      "track": "B",
+      "notes": "Custom Notion careers \u2014 couldn't classify",
+      "domain": "fly.io"
+    },
+    {
+      "name": "DigitalOcean",
+      "ats": "unknown",
+      "ats_slug": null,
+      "tier": 2,
+      "track": "A",
+      "notes": "Couldn't classify on probe pass",
+      "domain": "digitalocean.com"
+    },
+    {
+      "name": "Codeium",
+      "ats": "unknown",
+      "ats_slug": null,
+      "tier": 2,
+      "track": "B",
+      "notes": "Couldn't classify on probe pass",
+      "domain": "codeium.com"
+    },
+    {
+      "name": "ConnectWise",
+      "ats": "greenhouse",
+      "ats_slug": "connectwise",
+      "tier": 1,
+      "track": "Tampa",
+      "notes": "Tampa Tier 1T; verified ~58 jobs via Greenhouse",
+      "domain": "connectwise.com"
+    },
+    {
+      "name": "KnowBe4",
+      "ats": "greenhouse",
+      "ats_slug": "knowbe4",
+      "tier": 1,
+      "track": "Tampa",
+      "notes": "Tampa Tier 1T; verified ~92 jobs via Greenhouse (was misclassified as Workday)",
+      "domain": "knowbe4.com"
+    }
+  ]
+}

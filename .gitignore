@@ -1,0 +1,40 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Environments + secrets
+.env
+.env.local
+.env.production
+
+# Generated data
+output/*.xlsx
+output/*.csv
+output/*.pdf
+
+# Per-machine persistent caches (domain memory etc.)
+state/
+
+# Tailored resume variants (personal data)
+resume.yaml
+resume-*.yaml
+applications/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Build artifacts
+*.egg-info/
+build/
+dist/
+
+# rendercv outputs
+rendercv_output/
+rendercv_output_*/

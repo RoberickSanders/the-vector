@@ -1,0 +1,42 @@
+{
+  "$comment": "Claude Code skill manifest for the Plugin Marketplace. Verify the active schema at https://docs.claude.com/en/docs/claude-code/skills before publishing — the canonical format is the SKILL.md frontmatter at .claude/skills/vector-job-search/SKILL.md, but this JSON form is what some tooling reads.",
+  "name": "vector-job-search",
+  "version": "0.1.0",
+  "description": "The Vector — agentic GTM job-search tool. Find hiring managers, tailor resumes per JD with proof-point safety, score against ATS, batch-apply at scale.",
+  "homepage": "https://github.com/RoberickSanders/the-vector",
+  "license": "MIT",
+  "user_invocable": true,
+  "argument_hint": "tailor my resume for <company>, find hiring manager for <jd-url>, batch apply top 5",
+  "allowed_tools": ["Bash", "Read", "Write", "Edit"],
+  "skill_path": ".claude/skills/vector-job-search/SKILL.md",
+  "tags": [
+    "job-search",
+    "gtm",
+    "recruiting",
+    "resume-tailoring",
+    "hiring-manager-finder",
+    "ats-scoring",
+    "agentic"
+  ],
+  "requires": {
+    "env": ["ANTHROPIC_API_KEY"],
+    "optional_env": [
+      "BLITZ_API_KEY",
+      "HUNTER_API_KEY",
+      "ICYPEAS_API_KEY",
+      "ICYPEAS_API_SECRET",
+      "MILLIONVERIFIER_API_KEY",
+      "SERPER_API_KEY",
+      "KIMI_API_KEY"
+    ],
+    "bins": ["python3"]
+  },
+  "scripts": {
+    "scrape": "python -m tools.scrape",
+    "score": "python -m tools.score",
+    "find_managers": "python -m tools.find_managers",
+    "tailor": "python -m tools.tailor",
+    "score_resume": "python -m tools.score_resume",
+    "batch_apply": "python -m tools.batch_apply"
+  }
+}

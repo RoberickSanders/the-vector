@@ -1,0 +1,11 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Generated data (large, frequently regenerated)
+output/*.xlsx
+output/*.csv
+
+# Per-machine persistent caches (domain memory etc.)
+state/

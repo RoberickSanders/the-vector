@@ -1,0 +1,43 @@
+--- # Example auto-apply profile (consumed by tools.auto_apply)
+#
+# Schema reference: tools/auto_apply.py :: ApplicationProfile pydantic model.
+# Add a new profile by copying this file and editing the values.
+# Default fields are listed in the schema; extras are ignored.
+#
+# IMPORTANT: this file is committed. Keep it free of credentials.
+# (resume PDFs, cover letters, and any sensitive answers live elsewhere.)
+
+identity:
+  full_name: "Example User"
+  email: "your-email@example.com"
+  phone: "+1-555-555-5555"
+  location: "Your City, ST"
+  linkedin: "https://www.linkedin.com/in/your-profile"
+  github: "https://github.com/your-github"
+  website: ""
+
+work_authorization:
+  authorized_to_work_us: true
+  requires_sponsorship: false
+
+salary:
+  default_expected: 150000
+  default_acceptable_floor: 120000
+
+veteran_status:
+  is_veteran: false
+  has_disability: false
+
+demographics:
+  # Always voluntary. Default decline-to-self-identify is safest unless the
+  # role explicitly benefits from disclosure.
+  voluntary_disclosure: "decline_to_self_identify"
+
+# Free-form answers to the most common custom questions. The auto-apply
+# agent will use these where it can match the field, otherwise it pauses
+# for human review (per "human-in-loop" requirement).
+custom_answers:
+  why_this_company: ""           # leave blank => agent pauses for human input
+  why_this_role: ""
+  notice_period_days: 14
+  earliest_start: "2 weeks after offer"

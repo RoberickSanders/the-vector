@@ -1,0 +1,20 @@
+{
+  "total": 2,
+  "jobPostings": [
+    {
+      "title": "Senior Solutions Engineer - Cyber",
+      "externalPath": "/job/US-FL-Tampa/Senior-Solutions-Engineer---Cyber_JR1234567",
+      "locationsText": "US, FL, Tampa",
+      "postedOn": "Posted Today",
+      "bulletFields": ["JR1234567"]
+    },
+    {
+      "title": "GTM Engineer (Remote)",
+      "externalPath": "/job/US-Remote/GTM-Engineer--Remote-_JR1234568",
+      "locationsText": "Remote",
+      "postedOn": "Posted Yesterday",
+      "bulletFields": ["JR1234568"]
+    }
+  ],
+  "facets": []
+}

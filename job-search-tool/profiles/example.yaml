@@ -1,0 +1,36 @@
+name: "Example User"
+
+identity:
+  email: "your-email@example.com"
+  signature_block: "Example User"
+  resume_path: "profiles/example/resume.md"
+  cover_letter_path: "profiles/example/cover-letter-template.md"
+  linkedin: "https://www.linkedin.com/in/your-profile/"
+
+search:
+  terms:
+    - "GTM Engineer"
+    - "Growth Engineer"
+    - "RevOps Engineer"
+    - "Forward Deployed Engineer"
+    - "Solutions Engineer"
+  locations:
+    - {location: null, is_remote: true}
+    - {location: "Your City, ST", is_remote: null}
+  exclude_terms: ["commission only", "1099 only", "unpaid"]
+  min_salary: 100000
+  hours_old: 72
+
+scoring:
+  llm_model: "kimi-for-coding"
+  rubric_path: "profiles/example/scoring-rubric.md"
+  threshold_for_outreach: 7
+
+drive:
+  folder_name: "job-search-example"
+  master_filename: "example-jobs-master.xlsx"
+
+outreach:
+  mailbox_pool: ["your-email@example.com"]
+  daily_send_limit: 5
+  signature_path: "profiles/example/email-signature.txt"

@@ -1,0 +1,33 @@
+name: "Test User"
+
+identity:
+  email: "test@example.com"
+  signature_block: "Test User"
+  resume_path: "profiles/test/resume.md"
+  cover_letter_path: "profiles/test/cover-letter.md"
+  linkedin: "https://www.linkedin.com/in/test-user/"
+
+search:
+  terms:
+    - "GTM Engineer"
+    - "RevOps Engineer"
+  locations:
+    - {location: null, is_remote: true}
+    - {location: "Tampa, FL", is_remote: null}
+  exclude_terms: []
+  min_salary: 100000
+  hours_old: 72
+
+scoring:
+  llm_model: "claude-sonnet-4-6"
+  rubric_path: "profiles/test/scoring-rubric.md"
+  threshold_for_outreach: 7
+
+drive:
+  folder_name: "job-search-test"
+  master_filename: "test-jobs-master.xlsx"
+
+outreach:
+  mailbox_pool: []
+  daily_send_limit: 5
+  signature_path: "profiles/test/email-signature.txt"
