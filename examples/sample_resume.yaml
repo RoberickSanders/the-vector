@@ -1,0 +1,62 @@
+# Sample resume.yaml for The Vector quickstart
+# Fictional candidate. Replace with your own content for real use.
+
+cv:
+  name: Jane Doe
+  headline: Solutions Engineer | Sales Background + Technical Skills
+  location: Austin, TX
+  email: jane.doe@example.com
+  phone: "+1-555-555-5555"
+
+  sections:
+    summary:
+      - "Solutions Engineer with 5 years bridging sales and engineering. 3 years SDR/AE at a B2B SaaS startup followed by 2 years as a Solutions Engineer at a CRM company. Comfortable running technical discovery, building demo workflows, and writing scripts to integrate customer systems."
+
+    experience:
+      - company: ExampleCRM Inc.
+        position: Solutions Engineer, Mid-Market
+        start_date: 2024-01
+        end_date: present
+        location: Remote
+        highlights:
+          - "Led technical discovery and POC builds for 50+ mid-market accounts"
+          - "Built custom integrations using ExampleCRM's REST API and webhook framework"
+          - "Reduced average POC build time from 3 weeks to 5 days"
+
+      - company: SaaSCo
+        position: Account Executive (Mid-Market)
+        start_date: 2022-01
+        end_date: 2024-01
+        location: Austin, TX
+        highlights:
+          - "120% quota attainment in first full year"
+          - "Closed $2.5M in net-new ARR across 30+ deals"
+          - "Owned full sales cycle from discovery through close"
+
+      - company: SaaSCo
+        position: Sales Development Representative
+        start_date: 2020-06
+        end_date: 2022-01
+        location: Austin, TX
+        highlights:
+          - "Top SDR globally three quarters in a row"
+          - "Generated $1.5M in qualified pipeline"
+
+    skills:
+      - label: Technical
+        details: REST APIs, JSON, webhooks, SQL (basic), Python (basic), HTML/CSS, Salesforce SOQL
+      - label: GTM Tools
+        details: Salesforce, HubSpot, Outreach, Apollo.io, Gong, ZoomInfo, LinkedIn Sales Navigator
+      - label: Workflow Tools
+        details: Zapier, n8n, Make.com
+
+    education:
+      - institution: Example University
+        degree: BA
+        area: Communications
+        start_date: 2016-09
+        end_date: 2020-05
+        location: Austin, TX
+
+design:
+  theme: classic

@@ -2,6 +2,28 @@
 
 An agentic toolchain for job seekers. Find the right hiring manager, tailor your resume to each posting safely, score yourself against the ATS, and apply at scale.
 
+## Try it now (no API keys required)
+
+The fastest way to see the toolchain work:
+
+```bash
+git clone https://github.com/RoberickSanders/the-vector
+cd the-vector/job-search-tool
+python -m venv .venv && .venv/bin/pip install -r requirements.txt
+
+# Pull real jobs (JobSpy is auth-free)
+.venv/bin/python -m tools.jobspy_pull --search-terms "Solutions Engineer" \
+  --remote-only --hours-old 168 --output examples/output/jobs.csv
+
+# Score a sample resume against a sample JD (no LLM needed)
+.venv/bin/python -m tools.score_resume \
+  --jd-file examples/sample_job.json \
+  --resume-yaml examples/sample_resume.yaml \
+  --no-llm
+```
+
+Full quickstart at [`examples/QUICKSTART.md`](examples/QUICKSTART.md). Architecture deep-dive at [`docs/architecture.md`](docs/architecture.md).
+
 ## What it does
 
 - **find_managers** — multi-source enrichment cascade that resolves the hiring manager's email and LinkedIn for any job posting. Optional fallbacks let it work with whatever API keys you have access to.
